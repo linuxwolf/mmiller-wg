@@ -10,7 +10,7 @@ Expires: January 21, 2018
 
   Deprecating JSON Web Algorithm (JWA) "none" from JSON Web Signatures
                                  (JWS).
-                  draft-mmiller-curdle-algnone-goaway
+                   draft-mmiller-curdle-alg-none-gone
 
 Abstract
 
