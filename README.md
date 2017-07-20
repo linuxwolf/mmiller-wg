@@ -2,9 +2,9 @@
 
 This is the working area for the individual Internet-Draft, "Deprecating JSON Web Algorithm (JWA) none from JSON Web Signatures (JWS).".
 
-* [Editor's Copy](https://linuxwolf.github.io/mmiller-wg/#go.draft-mmiller-curdle-algnone-goaway.html)
-* [Working Group Draft](https://tools.ietf.org/html/draft-mmiller-curdle-algnone-goaway)
-* [Compare Editor's Copy to Working Group Draft](https://linuxwolf.github.io/mmiller-wg/#go.draft-mmiller-curdle-algnone-goaway.diff)
+* [Editor's Copy](https://linuxwolf.github.io/mmiller-wg/#go.draft-mmiller-curdle-alg-none-gone.html)
+* [Working Group Draft](https://tools.ietf.org/html/draft-mmiller-curdle-alg-none-gone)
+* [Compare Editor's Copy to Working Group Draft](https://linuxwolf.github.io/mmiller-wg/#go.draft-mmiller-curdle-alg-none-gone.diff)
 
 ## Building the Draft
 

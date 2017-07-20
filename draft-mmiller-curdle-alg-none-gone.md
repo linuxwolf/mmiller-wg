@@ -3,7 +3,7 @@ coding: utf-8
 
 title: Deprecating JSON Web Algorithm (JWA) "none" from JSON Web Signatures (JWS).
 abbrev: algnone-goaway
-docname: draft-mmiller-curdle-algnone-goaway
+docname: draft-mmiller-curdle-alg-none-gone
 category: std
 
 stand_alone: yes
