@@ -1,0 +1,168 @@
+
+
+
+
+Network Working Group                                          M. Miller
+Internet-Draft                                             July 20, 2017
+Intended status: Standards Track
+Expires: January 21, 2018
+
+
+  Deprecating JSON Web Algorithm (JWA) "none" from JSON Web Signatures
+                                 (JWS).
+                  draft-mmiller-curdle-algnone-goaway
+
+Abstract
+
+   A JSON Web Signature (JWS) can be generated that lacks any integrity
+   protection of the payload (sometimes called "unprotected JWS").  The
+   "none" algorithm provides no security properties, and has been mis-
+   implemented and mis-used that has demonstrable exploits and
+   vulnerabilities in the real world.  This document deprecates the use
+   of "none".
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at http://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on January 21, 2018.
+
+Copyright Notice
+
+   Copyright (c) 2017 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (http://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+
+
+
+Miller                  Expires January 21, 2018                [Page 1]
+
+Internet-Draft               algnone-goaway                    July 2017
+
+
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Terminology . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   2
+   4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   2
+   5.  Normative References  . . . . . . . . . . . . . . . . . . . .   2
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   3
+
+1.  Introduction
+
+   JWS [RFC7515] signature algorithm "none" in [RFC7517] is bad.  It
+   should go away.  Make it go away.
+
+2.  Terminology
+
+   The words "MUST", "MUST NOT", "SHOULD", and "MAY" are used in this
+   document.  It's not shouting, when they are capitalized, they have
+   the special meaning described in [RFC2119].
+
+3.  Security Considerations
+
+   Making "alg":"none" go away mitigates some vulnerabilities and
+   exploits.
+
+4.  IANA Considerations
+
+   Make it go away.
+
+5.  Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <http://www.rfc-editor.org/info/rfc2119>.
+
+   [RFC7515]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web
+              Signature (JWS)", RFC 7515, DOI 10.17487/RFC7515, May
+              2015, <http://www.rfc-editor.org/info/rfc7515>.
+
+   [RFC7517]  Jones, M., "JSON Web Key (JWK)", RFC 7517,
+              DOI 10.17487/RFC7517, May 2015,
+              <http://www.rfc-editor.org/info/rfc7517>.
+
+
+
+
+
+Miller                  Expires January 21, 2018                [Page 2]
+
+Internet-Draft               algnone-goaway                    July 2017
+
+
+Author's Address
+
+   Matthew A. Miller
+
+   Email: linuxwolf+ietf@outer-planes.net
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Miller                  Expires January 21, 2018                [Page 3]
