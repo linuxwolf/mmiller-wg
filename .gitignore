@@ -1,3 +1,5 @@
 *.html
 *.txt
 *.xml
+lib
+draft-mmiller-curdle-algnone-goaway.xml
