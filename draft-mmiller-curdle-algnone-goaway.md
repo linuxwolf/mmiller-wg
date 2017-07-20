@@ -4,7 +4,7 @@ coding: utf-8
 title: Deprecating JSON Web Algorithm (JWA) "none" from JSON Web Signatures (JWS).
 abbrev: algnone-goaway
 docname: draft-mmiller-curdle-algnone-goaway
-category: standards
+category: std
 
 stand_alone: yes
 pi: [toc, sortrefs, symrefs, comments]
@@ -31,6 +31,14 @@ A JSON Web Signature (JWS) can be generated that lacks any integrity protection 
 # Introduction
 
 JWS {{RFC7515}} signature algorithm "none" in {{RFC7517}} is bad.  It should go away.  Make it go away.
+
+# Terminology
+
+The words "MUST", "MUST NOT", "SHOULD", and "MAY" are used in this document.  It's not shouting, when they are capitalized, they have the special meaning described in {{RFC2119}}.
+
+# Security Considerations
+
+Making "alg":"none" go away mitigates some vulnerabilities and exploits.
 
 # IANA Considerations
 
