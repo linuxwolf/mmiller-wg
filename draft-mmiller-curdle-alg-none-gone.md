@@ -13,6 +13,7 @@ author:
   -
     ins: M. A. Miller
     name: Matthew A. Miller
+    org: Mozilla
     email: linuxwolf+ietf@outer-planes.net
 
 normative:
@@ -24,7 +25,7 @@ informative:
 
 --- abstract
 
-A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called "unprotected JWS").  The "none" algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of "none".
+A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called "unprotected JWS").  The "none" algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of "none" for future use, and provides recommendations to implementers that need to support "none" for existing deployments.
 
 --- middle
 
@@ -38,8 +39,8 @@ The words "MUST", "MUST NOT", "SHOULD", and "MAY" are used in this document.  It
 
 # Security Considerations
 
-Making "alg":"none" go away mitigates some vulnerabilities and exploits.
+Making "alg":"none" go away mitigates a number of downgrade attacks.
 
 # IANA Considerations
 
-Make it go away.
+Make it "NOT RECOMMENDED" for future usage.
