@@ -288,9 +288,9 @@ address {
 
   <meta name="dct.creator" content="Miller, M." />
   <meta name="dct.identifier" content="urn:ietf:id:draft-mmiller-curdle-alg-none-gone" />
-  <meta name="dct.issued" scheme="ISO8601" content="2017-7-20" />
-  <meta name="dct.abstract" content="A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called &#8220;unprotected JWS&#8221;).  The &#8220;none&#8221; algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of &#8220;none&#8221;." />
-  <meta name="description" content="A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called &#8220;unprotected JWS&#8221;).  The &#8220;none&#8221; algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of &#8220;none&#8221;." />
+  <meta name="dct.issued" scheme="ISO8601" content="2017-7-24" />
+  <meta name="dct.abstract" content="A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called &#8220;unprotected JWS&#8221;).  The &#8220;none&#8221; algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of &#8220;none&#8221; for future use, and provides recommendations to implementers that need to support &#8220;none&#8221; for existing deployments." />
+  <meta name="description" content="A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called &#8220;unprotected JWS&#8221;).  The &#8220;none&#8221; algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of &#8220;none&#8221; for future use, and provides recommendations to implementers that need to support &#8220;none&#8221; for existing deployments." />
 
 </head>
 
@@ -305,14 +305,14 @@ address {
 </tr>
 <tr>
 <td class="left">Internet-Draft</td>
-<td class="right">July 20, 2017</td>
+<td class="right">Mozilla</td>
 </tr>
 <tr>
 <td class="left">Intended status: Standards Track</td>
-<td class="right"></td>
+<td class="right">July 24, 2017</td>
 </tr>
 <tr>
-<td class="left">Expires: January 21, 2018</td>
+<td class="left">Expires: January 25, 2018</td>
 <td class="right"></td>
 </tr>
 
@@ -324,12 +324,12 @@ address {
   <span class="filename">draft-mmiller-curdle-alg-none-gone</span></p>
   
   <h1 id="rfc.abstract"><a href="#rfc.abstract">Abstract</a></h1>
-<p>A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called &#8220;unprotected JWS&#8221;).  The &#8220;none&#8221; algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of &#8220;none&#8221;.</p>
+<p>A JSON Web Signature (JWS) can be generated that lacks any integrity protection of the payload (sometimes called &#8220;unprotected JWS&#8221;).  The &#8220;none&#8221; algorithm provides no security properties, and has been mis-implemented and mis-used that has demonstrable exploits and vulnerabilities in the real world. This document deprecates the use of &#8220;none&#8221; for future use, and provides recommendations to implementers that need to support &#8220;none&#8221; for existing deployments.</p>
 <h1 id="rfc.status"><a href="#rfc.status">Status of This Memo</a></h1>
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on January 21, 2018.</p>
+<p>This Internet-Draft will expire on January 25, 2018.</p>
 <h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
 <p>Copyright (c) 2017 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
 <p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
@@ -366,11 +366,11 @@ address {
 <h1 id="rfc.section.3">
 <a href="#rfc.section.3">3.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a>
 </h1>
-<p id="rfc.section.3.p.1">Making &#8220;alg&#8221;:&#8221;none&#8221; go away mitigates some vulnerabilities and exploits.</p>
+<p id="rfc.section.3.p.1">Making &#8220;alg&#8221;:&#8221;none&#8221; go away mitigates a number of downgrade attacks.</p>
 <h1 id="rfc.section.4">
 <a href="#rfc.section.4">4.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a>
 </h1>
-<p id="rfc.section.4.p.1">Make it go away.</p>
+<p id="rfc.section.4.p.1">Make it &#8220;NOT RECOMMENDED&#8221; for future usage.</p>
 <h1 id="rfc.references">
 <a href="#rfc.references">5.</a> Normative References</h1>
 <table><tbody>
@@ -399,7 +399,7 @@ address {
 		<span class="family-name">Miller</span>
 	  </span>
 	</span>
-	<span class="org vcardline"></span>
+	<span class="org vcardline">Mozilla</span>
 	<span class="adr">
 	  
 	  <span class="vcardline">

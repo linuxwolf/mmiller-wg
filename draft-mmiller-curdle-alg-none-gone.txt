@@ -3,9 +3,9 @@
 
 
 Network Working Group                                          M. Miller
-Internet-Draft                                             July 20, 2017
-Intended status: Standards Track
-Expires: January 21, 2018
+Internet-Draft                                                   Mozilla
+Intended status: Standards Track                           July 24, 2017
+Expires: January 25, 2018
 
 
   Deprecating JSON Web Algorithm (JWA) "none" from JSON Web Signatures
@@ -19,7 +19,8 @@ Abstract
    "none" algorithm provides no security properties, and has been mis-
    implemented and mis-used that has demonstrable exploits and
    vulnerabilities in the real world.  This document deprecates the use
-   of "none".
+   of "none" for future use, and provides recommendations to
+   implementers that need to support "none" for existing deployments.
 
 Status of This Memo
 
@@ -36,7 +37,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on January 21, 2018.
+   This Internet-Draft will expire on January 25, 2018.
 
 Copyright Notice
 
@@ -49,15 +50,15 @@ Copyright Notice
    publication of this document.  Please review these documents
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
-   include Simplified BSD License text as described in Section 4.e of
 
 
 
-Miller                  Expires January 21, 2018                [Page 1]
+Miller                  Expires January 25, 2018                [Page 1]
 
 Internet-Draft               algnone-goaway                    July 2017
 
 
+   include Simplified BSD License text as described in Section 4.e of
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
@@ -83,12 +84,11 @@ Table of Contents
 
 3.  Security Considerations
 
-   Making "alg":"none" go away mitigates some vulnerabilities and
-   exploits.
+   Making "alg":"none" go away mitigates a number of downgrade attacks.
 
 4.  IANA Considerations
 
-   Make it go away.
+   Make it "NOT RECOMMENDED" for future usage.
 
 5.  Normative References
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Miller                  Expires January 21, 2018                [Page 2]
+Miller                  Expires January 25, 2018                [Page 2]
 
 Internet-Draft               algnone-goaway                    July 2017
 
@@ -117,6 +117,7 @@ Internet-Draft               algnone-goaway                    July 2017
 Author's Address
 
    Matthew A. Miller
+   Mozilla
 
    Email: linuxwolf+ietf@outer-planes.net
 
@@ -164,5 +165,4 @@ Author's Address
 
 
 
-
-Miller                  Expires January 21, 2018                [Page 3]
+Miller                  Expires January 25, 2018                [Page 3]
